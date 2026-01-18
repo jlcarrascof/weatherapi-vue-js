@@ -51,7 +51,7 @@ body {
   background-color: transparent;
   border: .3rem solid var(--blanco);
   border-radius: 1rem;
-  color: var(--negro);
+  color: var(--blanco);
   font-weight: 400;
   font-size: 1.8rem;
 }

@@ -27,7 +27,9 @@
 
         <div class="campo">
             <label for="pais">Country:</label>
-            <select>
+            <select
+                id="pais"
+            >
                 <option value="">-- Select a country --</option>
                 <option v-for="pais in paises" :value="pais.codigo">{{ pais.nombre }}</option>
             </select>
