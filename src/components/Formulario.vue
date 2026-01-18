@@ -34,5 +34,8 @@
                 <option v-for="pais in paises" :value="pais.codigo">{{ pais.nombre }}</option>
             </select>
         </div>
+
+        <input type="submit" value="Check Weather">
+
     </form>
 </template>
