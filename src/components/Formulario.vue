@@ -26,12 +26,11 @@
         </div>
 
         <div class="campo">
-            <label for="ciudad">City:</label>
-            <input 
-                type="text"
-                id="ciudad"
-                placeholder="City"
-            >
+            <label for="pais">Country:</label>
+            <select>
+                <option value="">-- Select a country --</option>
+                <option v-for="pais in paises" :value="pais.codigo">{{ pais.nombre }}</option>
+            </select>
         </div>
     </form>
 </template>
