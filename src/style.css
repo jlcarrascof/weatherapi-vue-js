@@ -45,16 +45,33 @@ body {
   font-size: 2rem;
   font-weight: 700;
 }
-.formulario input[type="text"], 
-.formulario select {
+
+.formulario input[type="text"] {
   padding: 1rem;
   background-color: transparent;
   border: .3rem solid var(--blanco);
   border-radius: 1rem;
-  color: var(--blanco);
+  color: var(--blanco); 
   font-weight: 400;
   font-size: 1.8rem;
 }
+
+
+.formulario select {
+  padding: 1rem;
+  background-color: transparent; 
+  border: .3rem solid var(--blanco);
+  border-radius: 1rem;
+  color: var(--blanco); 
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.formulario select option {
+  background-color: var(--blanco); 
+  color: var(--negro);             
+}
+
 .formulario input[type="submit"] {
   background-color: var(--primary);
   border: none;
