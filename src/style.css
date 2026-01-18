@@ -1,6 +1,7 @@
 :root {
   --blanco: #fff;
   --primary: #f59e0b;
+  --negro: #000;
 }
 html {
   font-size: 62.5%;
@@ -50,7 +51,7 @@ body {
   background-color: transparent;
   border: .3rem solid var(--blanco);
   border-radius: 1rem;
-  color: var(--blanco);
+  color: var(--negro);
   font-weight: 400;
   font-size: 1.8rem;
 }

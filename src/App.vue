@@ -3,5 +3,9 @@
 </script>
 
 <template>
-    <Formulario />
+    <h1 class="titulo">Weather Explorer</h1>
+
+    <div class="contenedor buscador-clima">
+        <Formulario />
+    </div>
 </template>
