@@ -25,6 +25,8 @@
             error.value = 'All the fields are mandatory'
             return
         }
+
+        error.value = ''
     }
 
 </script>
