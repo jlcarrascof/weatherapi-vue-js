@@ -19,6 +19,13 @@
         { codigo: 'PE', nombre: 'Perú' }
     ]
 
+    const consultarClima = () => {
+        if (Object.values(busqueda).includes('')) {
+            error.value = 'All the fields are mandatory'
+            return
+        }
+    }
+
 </script>
 
 <template>
