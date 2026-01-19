@@ -1,6 +1,7 @@
 <script setup>
 
     import { reactive, ref } from 'vue'
+    import Alerta from './Alerta.vue'
 
     const busqueda = reactive({
         ciudad: '',
@@ -33,6 +34,9 @@
         class="formulario"
         @submit.prevent="consultarClima"
     >
+
+        <Alerta v-if="error">{{ error }}</Alerta>
+
         <div class="campo">
             <label for="ciudad">City:</label>
             <input 
