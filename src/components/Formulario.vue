@@ -1,11 +1,13 @@
 <script setup>
 
-    import { reactive } from 'vue'
+    import { reactive, ref } from 'vue'
 
     const busqueda = reactive({
         ciudad: '',
         pais: '',
     })
+
+    const error = ref('')
 
     const paises = [
         { codigo: 'US', nombre: 'Estados Unidos' },
@@ -22,6 +24,7 @@
 <template>
     <form
         class="formulario"
+        @submit.prevent="consultarClima"
     >
         <div class="campo">
             <label for="ciudad">City:</label>
