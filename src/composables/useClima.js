@@ -7,6 +7,8 @@ export default function useClima() {
         const url = `http://api.openweathermap.org/geo/1.0/direct?q=${ciudad},
                     ${pais}&limit=1&appid=${key}`;
 
+        console.log(url);            
+
         // Get the weather
 
 
