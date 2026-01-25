@@ -10,9 +10,11 @@ export default function useClima() {
             const url = `http://api.openweathermap.org/geo/1.0/direct?q=${ciudad},
                         ${pais}&limit=1&appid=${key}`;
 
-            const { data } = await axios(url);            
-
-            console.log(data);            
+            const { data } = await axios(url);
+            const { lat, lon } = data[0];
+            
+            console.log(lat)
+            console.log(lon)            
         } catch(error) {
             console.log(error)
         }
