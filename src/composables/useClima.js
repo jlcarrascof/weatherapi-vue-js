@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export default function useClima() {
     const obtenerClima = ({ ciudad, pais }) => {
         // Import API Key ....
