@@ -21,7 +21,8 @@ export default function useClima() {
             const urlClimna = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
             const {data: resultado} = await axios(urlClimna);
 
-            console.log(resultado)
+            clima.value = resultado
+
         } catch(error) {
             console.log(error)
         }
@@ -34,5 +35,6 @@ export default function useClima() {
 
     return {
         obtenerClima,
+        clima,
     }
 }
