@@ -1,6 +1,10 @@
 import axios from "axios";
+import { ref } from 'vue';
 
 export default function useClima() {
+
+    const clima = ref({})
+
     const obtenerClima = async ({ ciudad, pais }) => {
         // Import API Key ....
         const key = import.meta.env.VITE_API_KEY;
