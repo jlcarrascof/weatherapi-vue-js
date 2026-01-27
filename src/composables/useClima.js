@@ -12,9 +12,12 @@ export default function useClima() {
 
             const { data } = await axios(url);
             const { lat, lon } = data[0];
-            
-            console.log(lat)
-            console.log(lon)            
+
+            // Get the weather
+            const urlClimna = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
+            const dataClima = await axios(urlClimna);
+
+            console.log(dataClima)
         } catch(error) {
             console.log(error)
         }
