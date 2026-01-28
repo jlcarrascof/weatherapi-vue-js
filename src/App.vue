@@ -4,7 +4,7 @@
     import Clima from './components/Clima.vue';
     import Spinner from './components/Spinner.vue';
 
-    const { obtenerClima, clima, mostrarClima } = useClima(); 
+    const { obtenerClima, clima, mostrarClima, cargando } = useClima(); 
 
 </script>
 
@@ -16,7 +16,7 @@
             @obtener-clima ="obtenerClima"
         />
 
-        <Spinner />
+        <Spinner v-if="cargando" />
 
         <Clima 
             v-if="mostrarClima"

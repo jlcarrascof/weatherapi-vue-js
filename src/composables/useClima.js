@@ -27,6 +27,8 @@ export default function useClima() {
 
         } catch(error) {
             console.log(error)
+        } finally {
+            cargando.value = false
         }
     }
 
@@ -41,5 +43,6 @@ export default function useClima() {
         clima,
         mostrarClima,
         formatearTemperatura,
+        cargando
     }
 }
