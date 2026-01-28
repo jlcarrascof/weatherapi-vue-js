@@ -1,5 +1,8 @@
 <script setup>
-
+    defineProps({
+        type: Object,
+        required: true
+    })
 </script>
 
 <template>
