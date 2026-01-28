@@ -1,13 +1,15 @@
 <script setup>
     defineProps({
-        type: Object,
-        required: true
+        clima: {
+            type: Object,
+            required: true
+        }
     })
 </script>
 
 <template>
     <div class="resultado">
-        <h2>Weather in: </h2>
+        <h2>Weather in: {{ clima.name }}</h2>
         <p class="actual"></p>
         <div class="temperaturas">
             <p>Min: <span>&deg;C</span></p>
