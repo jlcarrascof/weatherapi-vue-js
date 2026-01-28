@@ -4,10 +4,12 @@ import { computed, ref } from 'vue';
 export default function useClima() {
 
     const clima = ref({})
+    const cargando = ref(false)
 
     const obtenerClima = async ({ ciudad, pais }) => {
         // Import API Key ....
         const key = import.meta.env.VITE_API_KEY;
+        cargando.value = true
 
         try {
             // Get Lat and Long
