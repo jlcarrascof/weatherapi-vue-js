@@ -5,6 +5,7 @@ export default function useClima() {
 
     const clima = ref({})
     const cargando = ref(false)
+    const error = ref('')
 
     const obtenerClima = async ({ ciudad, pais }) => {
         // Import API Key ....
@@ -18,6 +19,7 @@ export default function useClima() {
                         ${pais}&limit=1&appid=${key}`;
 
             const { data } = await axios(url);
+            console.log(data);
             const { lat, lon } = data[0];
 
             // Get the weather
