@@ -12,6 +12,7 @@ export default function useClima() {
         const key = import.meta.env.VITE_API_KEY;
         cargando.value = true
         clima.value = {}
+        error.value = ''
 
         try {
             // Get Lat and Long
