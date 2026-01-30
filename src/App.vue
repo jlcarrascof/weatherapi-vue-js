@@ -3,8 +3,9 @@
     import useClima from './composables/useClima';
     import Clima from './components/Clima.vue';
     import Spinner from './components/Spinner.vue';
+    import Alerta from './components/Alerta.vue';
 
-    const { obtenerClima, clima, mostrarClima, cargando } = useClima(); 
+    const { obtenerClima, clima, mostrarClima, cargando, error } = useClima(); 
 
 </script>
 
@@ -17,6 +18,7 @@
         />
 
         <Spinner v-if="cargando" />
+        <Alerta v-if="error">{{ error }}</Alerta>
 
         <Clima 
             v-if="mostrarClima"

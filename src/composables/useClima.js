@@ -28,8 +28,8 @@ export default function useClima() {
 
             clima.value = resultado
 
-        } catch(error) {
-            console.log(error)
+        } catch {
+            error.value = 'City not found'
         } finally {
             cargando.value = false
         }
@@ -46,6 +46,7 @@ export default function useClima() {
         clima,
         mostrarClima,
         formatearTemperatura,
-        cargando
+        cargando,
+        error,
     }
 }
